@@ -7,8 +7,9 @@ public class car2 {
 		
 		car1 car=new car1();
 		
-		int bjhsb=car.Speed;
-		System.out.println("I covered "+ car.Speed);
+		
+		/* int bjhsb=car.speed; */
+		System.out.println(car.distanceCovered("jknkaj"));
 	
 
 	}

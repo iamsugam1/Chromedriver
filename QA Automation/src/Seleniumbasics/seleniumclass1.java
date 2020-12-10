@@ -10,7 +10,7 @@ public class seleniumclass1 {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe"); 
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://google.com");
+		driver.get("https://github.com/iamsugam1/eclipse");
 		System.out.println(driver.getTitle());
 		driver.close();
 		
