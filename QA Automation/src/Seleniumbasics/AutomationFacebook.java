@@ -1,5 +1,6 @@
 package Seleniumbasics;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -7,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 
 public class AutomationFacebook {
 
@@ -32,11 +34,16 @@ public class AutomationFacebook {
 				"//*[@id=\"mount_0_0\"]/div/div[1]/div[1]/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/a/div[1]/div"))
 				.click();
 		driver.findElement(By.xpath("//a[text()='Friends']")).click();
-		
-		
-		
-// 		driver.get("https://github.com/iamsugam1/Chromedriver/blob/master/QA%20Automation/src/Seleniumbasics/AutomationFacebook.java");
-//		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		List<WebElement> Allfriends = driver.findElements(By.xpath("//div[@class='buofh1pr hv4rvrfc']/div/a"));
+	
+		System.out.println(Allfriends.size());
+		for(int i=0; i<Allfriends.size(); i++) {
+			System.out.println(Allfriends.get(i).getText());
+		}
+	
+	
 	}
-
 }
+
+
