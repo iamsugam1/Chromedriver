@@ -41,7 +41,7 @@ public class AutomationFacebook {
 		}
 		driver.close();
 		
-		String str= "Sugam";
+		String str= "Sugam new";
 
 	}
 }
