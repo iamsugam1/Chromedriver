@@ -40,8 +40,7 @@ public class AutomationFacebook {
 			System.out.println(Allfriends.get(i).getText());
 		}
 		driver.close();
-		
-		String str= "Sugam new";
+		//Sugam sis afkoafio
 
 	}
 }
